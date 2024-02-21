@@ -1,0 +1,59 @@
+/* * {
+} */
+
+body {
+	margin-left: 20px;
+	background: linear-gradient(to right, rgb(255, 208, 0), rgb(255, 108, 3)); /* Defining a background-gradient */
+}
+
+input:focus {
+  background-color: rgba(255, 208, 0, 0.5); /* changing style when user selects the field */
+}
+
+input {
+  background-color: rgba(255, 108, 3, 0.5);
+  width: 300px;
+  height: 30px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid brown; /* defining input background- and border-color */
+}
+
+.search-container {
+  position: absolute; 
+	top: 50%;
+	left: 50%;
+	transform: translate(-150px, -15px); /* defining position of search container in center of page */
+}
+
+.search-container input,
+.search-container .suggestions {
+  font-size: 1.5rem; /* making suitable fontsize */
+}
+
+.search-container input {
+  /* covered with other CSS */
+}
+.search-container .suggestions {
+   /* covered with other CSS */
+}
+
+ul {
+  padding-left: 0pt; /* removing default space on left side */
+}
+
+ul.has-suggestions {
+  background-color: rgba(255, 208, 0, 0.5); /* generating background color of li elements */ 
+  margin-top: 0px; /* no gap between text-input and ul */
+}
+
+ul li {
+  list-style: none; /* removing the list dots */
+	width: 100%;
+}
+
+ul li:hover {
+  background-color: brown; 
+  color: white; /* changing background color and font-color when hovered */
+}
